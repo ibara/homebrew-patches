@@ -1,0 +1,14 @@
+--- hashtab.c.orig	2025-03-27 21:29:03
++++ hashtab.c	2025-03-27 21:29:24
+@@ -37,11 +37,6 @@
+ #include <stdio.h>
+ #include "hashtab.h"
+ 
+-#include <endian.h>
+-#if __BYTE_ORDER == __BIG_ENDIAN
+-# define WORDS_BIGENDIAN 1
+-#endif
+-
+ /* This macro defines reserved value for empty table entry. */
+ 
+ #define EMPTY_ENTRY    ((void *) 0)
